@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:ital,wght@1,200&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Handjet:wght@500&family=Montserrat:ital,wght@1,200&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+
+body {
+    background-color: #FF6666;
+}
+
+.navbar-brand {
+    font-family: 'Moirai One', system-ui;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-family:  'Helvetica', cursive;
+    /* font-family: 'Black Ops One', cursive; */
+    font-weight: bold;
+}
+
+/* CSS untuk menu non-aktif */
+.navbar-nav .nav-link:not(.active) {
+    opacity: 0.7;
+}
+
+/* Efek hover */
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #EEEDED; /* Warna garis bawah saat hover */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+/* Efek saat tidak hover */
+.navbar-nav .nav-link:not(:hover)::before {
+    transform: scaleX(0);
+}
+
+#bagian_1 {
+    background-color: #B04759;
+}
+
+.navbar {
+    background-color: #B04759;
+}
+
+#card_1 {
+    margin-top: 100px;
+    border: solid #0D1282; 
+    border-width: 3px;
+}
+
+.custom-border {
+    border: solid #0D1282; 
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 110px;
+    padding-right: 110px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 75px;
+    margin-bottom: 60px;
+    background-color: whitesmoke;
+}
+
+.custom-border2 {
+    border: solid #0D1282; 
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 75px;
+    margin-bottom: 60px;
+    background-color: whitesmoke;
+}
+
+.img-fluid, img {
+    border: solid white 10px;
+}
+
+.card, .hover-zoom {
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu_1, .menu_2{
+    border: solid #0D1282;
+    border-width: 3px;
+}
+
+.card:hover, .hover-zoom:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#myBtn,
+#myBtn2 {
+    border-radius: 10px;
+    background-color: #CE5A67;
+    color: #EEEDED;
+    font-family: 'Source Code Pro', monospace;
+    border: solid #0D1282; 
+    border-width: 2px;
+}
+
+.btn-lokasi {
+    border: solid #0D1282; 
+    border-width: 3px;
+}
+
+.btn, .btn-light a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Efek Hover untuk Tombol "Read More" */
+#myBtn:hover,
+#myBtn2:hover {
+    background-color: #0D1282; 
+    color: #EEEDED;
+    cursor: pointer; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#floatingTextarea {
+    height: 100px;
+}
+
+.text-area-pesan{
+    border: solid #0D1282; 
+    border-width: 3px;
+}
+
+footer {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: #25D366;
+    padding: 5px;
+}
+
+.whatsapp-button:hover{
+    background-color: white;
+}
